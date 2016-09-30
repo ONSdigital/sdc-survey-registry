@@ -17,7 +17,9 @@ registry = []
 def info():
     result = []
     for survey in registry:
-        result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"]})
+        refLink = "https://sdc-survey-registry.herokuapp.com/" + survey["reference"]
+        urnLink = "https://sdc-survey-registry.herokuapp.com/urn:com.herokuapp.sdc-survey-registry:id:ru:" + survey["reference"]
+        result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"], "refLink": refLink, "urnLink": urnLink})
     return jsonify(result)
 
 
@@ -53,7 +55,7 @@ if __name__ == '__main__':
         #print(acronym)
 
         registry.append({"name": title, "urn": "urn:com.herokuapp.sdc-survey-registry:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
-        print(json.dumps(registry))
+        #print(json.dumps(registry))
 
     # Start server
     port = int(os.environ.get("PORT", 5000))
