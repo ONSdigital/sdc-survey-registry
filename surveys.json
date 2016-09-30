@@ -1,0 +1,816 @@
+{
+  "type": "list",
+  "listType": "staticlist",
+  "uri": "/surveys/informationforbusinesses/businesssurveys/staticlist/data",
+  "result": {
+    "numberOfResults": 52,
+    "took": 5,
+    "results": [
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:56:18.984Z",
+          "source": "",
+          "title": "Vacancy Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/vacancysurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:52:38.560Z",
+          "source": "",
+          "title": "Unit Trusts: Quarterly Return of Transactions",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/unittrustsquarterlyreturnoftransactions"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:51:33.320Z",
+          "source": "",
+          "title": "Unit Trusts: Annual Return of Liabilities and Assets",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/unittrustsannualreturnofliabilitiesandassets"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:48:06.445Z",
+          "source": "",
+          "title": "UK Manufacturers' Sales by Product (PRODCOM)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/ukmanufacturerssalesbyproductprodcom"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:44:56.585Z",
+          "source": "",
+          "title": "UK Innovation Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/ukinnovationsurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:43:06.836Z",
+          "source": "",
+          "title": "Survey of Research and Development carried out in the UK",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/surveyofresearchanddevelopmentcarriedoutintheuk"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:41:01.928Z",
+          "source": "",
+          "title": "Services Turnover Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/servicesturnoversurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:39:53.925Z",
+          "source": "",
+          "title": "Services Producer Prices Indices: Recruiting of Pricing Information",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/servicesproducerpricesindicesrecruitingofpricinginformation"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:35:00.518Z",
+          "source": "",
+          "title": "Quarterly Welsh Business Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlywelshbusinesssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:31:43.411Z",
+          "source": "",
+          "title": "Quarterly Survey of Pension Funds",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlysurveyofpensionfunds"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:27:39.006Z",
+          "source": "",
+          "title": "Quarterly Survey of International Trade in Services",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlysurveyofinternationaltradeinservices"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:24:22.057Z",
+          "source": "",
+          "title": "Quarterly Survey of Insurance Companies",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlysurveyofinsurancecompanies"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:17:20.581Z",
+          "source": "",
+          "title": "Quarterly Inquiry for Services Producer Price Indices (SPPI)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlyinquiryforservicesproducerpriceindicessppi"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:15:33.149Z",
+          "source": "",
+          "title": "Quarterly Stocks Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlystockssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:13:22.738Z",
+          "source": "",
+          "title": "Quarterly Public Sector Employment Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlypublicsectoremploymentsurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:08:27.580Z",
+          "source": "",
+          "title": "Quarterly Operating Profits Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlyoperatingprofitssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:06:33.677Z",
+          "source": "",
+          "title": "Quarterly Inquiry into Sales of Industry in Scotland - Scottish Units Only",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlyinquiryintosalesofindustryinscotlandscottishunitsonly"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T11:03:23.199Z",
+          "source": "",
+          "title": "Quarterly Business Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlybusinesssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T10:57:59.515Z",
+          "source": "",
+          "title": "Quarterly Acquisitions and Disposals of Capital Assets Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlyacquisitionsanddisposalsofcapitalassetssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-23T00:00:00.000Z",
+          "source": "",
+          "title": "Quarterly Survey of Financial Assets and Liabilities",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/quarterlysurveyoffinancialassetsandliabilities"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-11T17:21:31.699Z",
+          "source": "",
+          "title": "Property Unit Trusts Annual Return of Liabilities and Assets",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/propertyunittrustsannualreturnofliabilitiesandassets"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "releaseDate": "2016-01-11T17:15:30.984Z",
+          "source": "",
+          "title": "Occupational Pension Schemes Survey (OPSS)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/occupationalpensionschemessurveyopss"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Investment Trusts Quarterly Return of Transactions",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/investmenttrustsquarterlyreturnoftransactions"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Wages and Salaries Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlywagesandsalariessurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Survey of Insurance Companies",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualsurveyofinsurancecompanies"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Index Number of Export Prices Provision Price Information",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/indexnumberofexportpricesprovisionpriceinformation"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Business Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualbusinesssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Inquiry for Index of Numbers of Producer Prices - Price Quotation Return",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlyinquiryforindexofnumbersofproducerpricespricequotationreturn"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Inquiry for Index Numbers of Import Prices - Price Quotation Return",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlyinquiryforindexnumbersofimportpricespricequotationreturn"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Foreign Direct Investment (FDI)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/foreigndirectinvestmentfdi"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Investment Trusts: Annual Return of Liabilities and Assets and Overseas Income and Interest Paid",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/investmenttrustsannualreturnofliabilitiesandassetsandoverseasincomeandinterestpaid"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Consumer Credit Grantors Register Update",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/consumercreditgrantorsregisterupdate"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Business Survey (Retail Sales Index)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlybusinesssurveyretailsalesindex"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Business Enterprise Research and Development Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/businessenterpriseresearchanddevelopmentsurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Survey of Pension Funds: Balance Sheet",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualsurveyofpensionfundsbalancesheet"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Survey of Consumer Credit Grantors",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlysurveyofconsumercreditgrantors"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Acquisitions and Disposals of Capital Assets Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualacquisitionsanddisposalsofcapitalassetssurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Survey of International Trade in Services",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualsurveyofinternationaltradeinservices"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Business Register and Employment Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/businessregisterandemploymentsurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Survey of Hours and Earnings (ASHE)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualsurveyofhoursandearningsashe"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Annual Purchases Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/annualpurchasessurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Business Register Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/businessregistersurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Financial Institutions Register Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/financialinstitutionsregistersurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Index Number of Import Prices Provision Price Information",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/indexnumberofimportpricesprovisionpriceinformation"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "E-Commerce Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/ecommercesurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Low Carbon and Renewable Energy Economy Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/lowcarbonandrenewableenergyeconomysurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Financial Services Survey",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/financialservicessurvey"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Business Survey (for Construction and Allied Trades)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlybusinesssurveyforconstructionandalliedtrades"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Business Survey (Production and Services)",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlybusinesssurveyproductionandservices"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Mergers and Acquisitions involving UK Companies",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/mergersandacquisitionsinvolvingukcompanies"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Index of Producer Prices Provision Price Information",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/indexofproducerpricesprovisionpriceinformation"
+      },
+      {
+        "_type": "static_page",
+        "description": {
+          "summary": "",
+          "unit": "",
+          "keywords": [],
+          "source": "",
+          "title": "Monthly Inquiry for Index Numbers of Export Prices - Price Quotation Return",
+          "metaDescription": "",
+          "preUnit": ""
+        },
+        "searchBoost": [],
+        "type": "static_page",
+        "uri": "/surveys/informationforbusinesses/businesssurveys/monthlyinquiryforindexnumbersofexportpricespricequotationreturn"
+      }
+    ],
+    "suggestions": [],
+    "docCounts": {},
+    "sortBy": "release_date"
+  }
+}
