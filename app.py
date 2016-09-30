@@ -17,15 +17,20 @@ registry = []
 def info():
     result = []
     for survey in registry:
-        result.append({"name": survey["name"], "reference": survey["reference"]})
+        result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"]})
     return jsonify(result)
 
 
 @app.route('/<reference>', methods=['GET'])
 def login(reference):
     for survey in registry:
-        if survey["reference"] == reference:
+        if survey["reference"] == reference or survey["urn"] == reference:
             return jsonify(survey)
+
+    # not found:
+    resp = jsonify("Survey not found for: " + reference)
+    resp.status_code = 400
+    return resp
 
 
 if __name__ == '__main__':
@@ -47,7 +52,7 @@ if __name__ == '__main__':
                 acronym += e[0]
         #print(acronym)
 
-        registry.append({"name": title, "reference": acronym, "releaseDate": releaseDate})
+        registry.append({"name": title, "urn": "urn:uk.gov.ons:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
         print(json.dumps(registry))
 
     # Start server
