@@ -52,7 +52,7 @@ if __name__ == '__main__':
                 acronym += e[0]
         #print(acronym)
 
-        registry.append({"name": title, "urn": "urn:uk.gov.ons:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
+        registry.append({"name": title, "urn": "urn:com.herokuapp.sdc-survey-registry:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
         print(json.dumps(registry))
 
     # Start server
