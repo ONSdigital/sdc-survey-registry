@@ -17,6 +17,6 @@ public class Summary {
         reference = name.replaceAll("\\B.|\\P{L}", "");
         urn = "urn:com.herokuapp.sdc-survey-registry-java:id:ru:" + reference;
         refLink = "https://sdc-survey-registry-java.herokuapp.com/" + reference;
-        urnLink = "https://sdc-survey-registry.herokuapp.com/urn:com.herokuapp.sdc-survey-registry:id:ru:" + reference;
+        urnLink = "https://sdc-survey-registry-java.herokuapp.com/urn:com.herokuapp.sdc-survey-registry-java:id:ru:" + reference;
     }
 }
