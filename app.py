@@ -18,9 +18,10 @@ registry = []
 def info():
     result = []
     for survey in registry:
-        # ref_link = "https://sdc-survey-registry.herokuapp.com/" + survey["reference"]
+        # ref_link = "https://sdc-survey-registry-python.herokuapp.com/" + survey["reference"]
         # urn_link =
-        # "https://sdc-survey-registry.herokuapp.com/urn:com.herokuapp.sdc-survey-registry:id:ru:" + survey["reference"]
+        # "https://sdc-survey-registry-python.herokuapp.com/urn:uk.gov.ons.surveys:id:ru:" +
+        # survey["reference"]
         link = "/" + survey["reference"]
         # result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"],
         # "refLink": ref_link, "urnLink": urn_link})
@@ -62,7 +63,7 @@ if __name__ == '__main__':
             if len(e) > 0:
                 acronym += e[0]
 
-        registry.append({"name": title, "urn": "urn:com.herokuapp.sdc-survey-registry:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
+        registry.append({"name": title, "urn": "urn:uk.gov.ons.surveys:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
 
     # Start server
     port = int(os.environ.get("PORT", 5000))
