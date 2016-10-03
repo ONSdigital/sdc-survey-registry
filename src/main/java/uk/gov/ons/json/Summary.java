@@ -16,9 +16,9 @@ public class Summary {
     public  Summary(Survey survey) {
         name = survey.description.title;
         reference = name.replaceAll("\\B.|\\P{L}", "");
-        urn = "urn:com.herokuapp.sdc-survey-registry-java:id:ru:" + reference;
+        urn = "urn:uk.gov.ons.surveys:id:ru:" + reference;
         //refLink = "https://sdc-survey-registry-java.herokuapp.com/" + reference;
-        //urnLink = "https://sdc-survey-registry-java.herokuapp.com/urn:com.herokuapp.sdc-survey-registry-java:id:ru:" + reference;
+        //urnLink = "https://sdc-survey-registry-java.herokuapp.com/urn:uk.gov.ons.surveys:id:ru:" + reference;
         link = "/" + reference;
     }
 }

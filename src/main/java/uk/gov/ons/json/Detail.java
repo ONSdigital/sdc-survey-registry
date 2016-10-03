@@ -14,7 +14,7 @@ public class Detail {
     public Detail(Survey survey) {
         name = survey.description.title;
         reference = name.replaceAll("\\B.|\\P{L}", "");
-        urn = "urn:com.herokuapp.sdc-survey-registry-java:id:ru:" + reference;
+        urn = "urn:uk.gov.ons.surveys:id:ru:" + reference;
         releaseDate = survey.description.releaseDate;
     }
 
