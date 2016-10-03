@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import json
 import re
+import requests
 
 
 app = Flask(__name__)
@@ -17,9 +18,13 @@ registry = []
 def info():
     result = []
     for survey in registry:
-        refLink = "https://sdc-survey-registry.herokuapp.com/" + survey["reference"]
-        urnLink = "https://sdc-survey-registry.herokuapp.com/urn:com.herokuapp.sdc-survey-registry:id:ru:" + survey["reference"]
-        result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"], "refLink": refLink, "urnLink": urnLink})
+        # ref_link = "https://sdc-survey-registry.herokuapp.com/" + survey["reference"]
+        # urn_link =
+        # "https://sdc-survey-registry.herokuapp.com/urn:com.herokuapp.sdc-survey-registry:id:ru:" + survey["reference"]
+        link = "/" + survey["reference"]
+        # result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"],
+        # "refLink": ref_link, "urnLink": urn_link})
+        result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"], "link": link})
     return jsonify(result)
 
 
@@ -35,27 +40,29 @@ def login(reference):
     return resp
 
 
+def get_json():
+    url = "https://www.ons.gov.uk/surveys/informationforbusinesses/businesssurveys/staticlist/data?size=60"
+    response = requests.get(url)
+    return response.json()
+
+
 if __name__ == '__main__':
 
-    with open("surveys.json") as surveys:
-        data = json.load(surveys)
-        results = data["result"]["results"]
+    data = get_json()
+    print(data)
+    results = data["result"]["results"]
     for survey in results:
         title = survey["description"]["title"]
         if "releaseDate" in survey["description"]:
             releaseDate = survey["description"]["releaseDate"]
-        #print(title)
 
         # Create an acronym reference for this survey
-        #print(re.split("\W+", title))
         acronym = ""
         for e in re.split("\W+", title):
             if len(e) > 0:
                 acronym += e[0]
-        #print(acronym)
 
         registry.append({"name": title, "urn": "urn:com.herokuapp.sdc-survey-registry:id:ru:"+acronym, "reference": acronym, "releaseDate": releaseDate})
-        #print(json.dumps(registry))
 
     # Start server
     port = int(os.environ.get("PORT", 5000))
