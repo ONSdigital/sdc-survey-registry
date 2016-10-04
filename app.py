@@ -31,13 +31,24 @@ def info():
 @app.route('/<reference>', methods=['GET'])
 def login(reference):
     for survey in get_registry():
-        if survey["reference"] == reference or survey["urn"] == reference:
+        if survey["reference"].lower() == reference.lower():
             return jsonify(survey)
 
     # not found:
     resp = jsonify("Survey not found for: " + reference)
     resp.status_code = 400
     return resp
+
+
+def abbreviate(name):
+    acronym = ""
+    stop_words = name
+    for stop in ("and", "of", "in", "the", "by"):
+        stop_words = stop_words.replace(" " + stop + " ", " ")
+    for e in re.split("\W+", stop_words):
+        if len(e) > 0:
+            acronym += e[0]
+    return acronym.lower()
 
 
 def get_registry():
@@ -52,22 +63,20 @@ def get_registry():
         for survey in results:
             title = survey["description"]["title"]
             if "releaseDate" in survey["description"]:
-                releaseDate = survey["description"]["releaseDate"]
+                release_date = survey["description"]["releaseDate"]
 
             # Create an acronym reference for this survey
-            acronym = ""
-            for e in re.split("\W+", title):
-                if len(e) > 0:
-                    acronym += e[0]
+            acronym = abbreviate(title)
 
             registry.append({
                 "name": title,
                 "urn": "urn:uk.gov.ons.surveys:id:survey:" + acronym,
                 "reference": acronym,
-                "releaseDate": releaseDate
+                "releaseDate": release_date
             })
 
     return registry
+
 
 
 if __name__ == '__main__':
