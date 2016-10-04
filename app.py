@@ -17,13 +17,7 @@ registry = []
 def info():
     result = []
     for survey in get_registry():
-        # ref_link = "https://sdc-survey-registry-python.herokuapp.com/" + survey["reference"]
-        # urn_link =
-        # "https://sdc-survey-registry-python.herokuapp.com/urn:uk.gov.ons.surveys:id:survey:" +
-        # survey["reference"]
         link = "/" + survey["reference"]
-        # result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"],
-        # "refLink": ref_link, "urnLink": urn_link})
         result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"], "link": link})
     return jsonify(result)
 
