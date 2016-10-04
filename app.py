@@ -18,7 +18,13 @@ def info():
     result = []
     for survey in get_registry():
         link = "/" + survey["reference"]
-        result.append({"name": survey["name"], "reference": survey["reference"], "urn": survey["urn"], "link": link})
+        result.append({
+            "name": survey["name"],
+            "reference": survey["reference"],
+            "urn": survey["urn"],
+            "link": link,
+            "frequency": survey["frequency"]
+        })
     return jsonify(result)
 
 
@@ -45,6 +51,14 @@ def abbreviate(name):
     return acronym.lower()
 
 
+def frequency(name):
+    if "monthly" in name.lower(): return "monthly"
+    if "quarterly" in name.lower(): return "quarterly"
+    if "quarterly" in name.lower(): return "annual"
+    # Fall back to a default guess - 1 in 3 ain't bad for now..
+    return "quarterly"
+
+
 def get_registry():
     global registry
 
@@ -66,7 +80,7 @@ def get_registry():
                 "name": title,
                 "urn": "urn:uk.gov.ons.surveys:id:survey:" + acronym,
                 "reference": acronym,
-                "releaseDate": release_date
+                "frequency": frequency(title)
             })
 
     return registry
