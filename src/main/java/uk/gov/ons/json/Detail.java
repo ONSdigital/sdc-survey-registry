@@ -13,8 +13,8 @@ public class Detail {
 
     public Detail(Survey survey) {
         name = survey.description.title;
-        reference = name.replaceAll("\\B.|\\P{L}", "");
-        urn = "urn:uk.gov.ons.surveys:id:survey:" + reference;
+        reference = Util.abbreviate(name);
+        urn = Util.urnPrefix + reference;
         releaseDate = survey.description.releaseDate;
     }
 

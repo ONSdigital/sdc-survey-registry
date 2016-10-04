@@ -50,7 +50,7 @@ public class SurveysList {
         if (surveys != null) {
             for (Survey survey : surveys.result.results) {
                 Summary summary = new Summary(survey);
-                if (summary.reference.equalsIgnoreCase(reference) || summary.urn.equalsIgnoreCase(reference)) {
+                if (summary.reference.equalsIgnoreCase(reference)) {
                     return new Detail(survey);
                 }
             }
