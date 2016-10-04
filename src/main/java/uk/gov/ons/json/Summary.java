@@ -6,6 +6,7 @@ public class Summary {
     public String reference;
     public String urn;
     public String link;
+    public String frequency;
 
     public Summary() {
         // Default constructor
@@ -16,5 +17,6 @@ public class Summary {
         reference = Util.abbreviate(name);
         urn = Util.urnPrefix + reference;
         link = "/" + reference;
+        frequency = Util.frequency(survey.description.title);
     }
 }
