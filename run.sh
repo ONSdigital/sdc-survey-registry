@@ -1,3 +1,3 @@
 #!/bin/bash
 go install
-app
+sdc-survey-registry
