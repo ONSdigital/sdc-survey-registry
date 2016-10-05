@@ -1,7 +1,7 @@
 {
-  "rootPath": "github.com/heroku/go-getting-started",
-"heroku": {
+  "rootPath": "github.com/onsdigital/sdc-survey-registry",
+  "heroku": {
     "install" : [ "./..." ],
     "goVersion": "go1.6"
-     }
+  }
 }
