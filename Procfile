@@ -1,1 +1,1 @@
-web: app
+web: sdc-survey-registry
