@@ -1,7 +1,6 @@
 import os
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 from flask_cors import CORS
-import json
 import re
 import requests
 
@@ -52,9 +51,12 @@ def abbreviate(name):
 
 
 def frequency(name):
-    if "monthly" in name.lower(): return "monthly"
-    if "quarterly" in name.lower(): return "quarterly"
-    if "quarterly" in name.lower(): return "annual"
+    if "monthly" in name.lower():
+        return "monthly"
+    if "quarterly" in name.lower():
+        return "quarterly"
+    if "annual" in name.lower():
+        return "annual"
     # Fall back to a default guess - 1 in 3 ain't bad for now..
     return "quarterly"
 
@@ -70,8 +72,6 @@ def get_registry():
         results = data["result"]["results"]
         for survey in results:
             title = survey["description"]["title"]
-            if "releaseDate" in survey["description"]:
-                release_date = survey["description"]["releaseDate"]
 
             # Create an acronym reference for this survey
             acronym = abbreviate(title)
@@ -84,7 +84,6 @@ def get_registry():
             })
 
     return registry
-
 
 
 if __name__ == '__main__':
