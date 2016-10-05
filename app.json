@@ -1,0 +1,12 @@
+{
+  "name": "sdc-survey-registry",
+  "description": "Survey registry in Go",
+  "keywords": [
+    "go",
+    "surveys"
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/onsdigital/sdc-survey-registry",
+  "website": "http://github.com/onsdigital/sdc-survey-registry",
+  "repository": "http://github.com/onsdigital/sdc-survey-registry"
+}
