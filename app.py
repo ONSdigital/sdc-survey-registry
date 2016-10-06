@@ -18,7 +18,8 @@ def info():
     for survey in get_registry():
         link = "/" + survey["reference"]
         result.append({
-            "name": survey["name"],
+            "name": survey["title"],
+            "title": survey["title"],
             "reference": survey["reference"],
             "urn": survey["urn"],
             "link": link,
@@ -31,7 +32,9 @@ def info():
 def login(reference):
     for survey in get_registry():
         if survey["reference"].lower() == reference.lower():
-            return jsonify(survey)
+            result = dict(survey)
+            result["name"] = result["title"]
+            return jsonify(result)
 
     # not found:
     resp = jsonify("Survey not found for: " + reference)
@@ -71,17 +74,28 @@ def get_registry():
         print(data)
         results = data["result"]["results"]
         for survey in results:
-            title = survey["description"]["title"]
+            uri = survey["uri"]
+            url = "https://www.ons.gov.uk" + uri + "/data"
+            print(url)
+            response = requests.get(url)
+            data = response.json()
 
             # Create an acronym reference for this survey
-            acronym = abbreviate(title)
 
-            registry.append({
-                "name": title,
-                "urn": "urn:uk.gov.ons.surveys:id:survey:" + acronym,
-                "reference": acronym,
-                "frequency": frequency(title)
-            })
+            item = data["description"]
+            title = item["title"]
+            acronym = abbreviate(item["title"])
+            item["markdown"] = data["markdown"]
+            item["links"] = data["links"]
+            item["reference"] = acronym
+            item["urn"] = "urn:uk.gov.ons.surveys:id:survey:" + acronym
+            item["frequency"] = frequency(title)
+            for link in item["links"]:
+                print(link)
+                link["uri"] = "https://www.ons.gov.uk" + link["uri"]
+
+            registry.append(item)
+            print(item)
 
     return registry
 
