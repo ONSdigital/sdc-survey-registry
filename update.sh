@@ -1,7 +1,7 @@
 #!/bin/bash
 git checkout master
-git merge flask
+git merge python-flask
 git push
-git checkout flask
+git checkout python-flask
 git push
 git branch
