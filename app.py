@@ -34,12 +34,6 @@ def login(reference):
         if survey["reference"].lower() == reference.lower():
             result = dict(survey)
             result["name"] = result["title"]
-            collection_instruments = [
-                {"id": "9001", "type": "online", "formTypes": ["011", "012"]},
-                {"id": "9002", "type": "offline", "formTypes": ["021", "022"]},
-                {"id": "9003", "type": "paper", "formTypes": ["031", "032"]}
-            ]
-            result["collection_instruments"] = collection_instruments
             return jsonify(result)
 
     # not found:
@@ -79,6 +73,8 @@ def get_registry():
         data = response.json()
         print(data)
         results = data["result"]["results"]
+        id_ = 1
+        form_type = 1
         for survey in results:
             uri = survey["uri"]
             url = "https://www.ons.gov.uk" + uri + "/data"
@@ -99,6 +95,16 @@ def get_registry():
             for link in item["links"]:
                 print(link)
                 link["uri"] = "https://www.ons.gov.uk" + link["uri"]
+
+            # Generate some dummy collection instruments and form types for the time being:
+            collection_instruments = [
+                {"id": "90" + str(id_), "type": "online", "form_types": [str(form_type), str(form_type + 1)]},
+                {"id": "90" + str(id_ + 1), "type": "offline", "form_types": [str(form_type + 2), str(form_type + 3)]},
+                {"id": "90" + str(id_ + 2), "type": "paper", "form_types": [str(form_type + 4), str(form_type + 5)]}
+            ]
+            id_ += 3
+            form_type += 6
+            item["collection_instruments"] = collection_instruments
 
             registry.append(item)
             print(item)
