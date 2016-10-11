@@ -34,6 +34,12 @@ def login(reference):
         if survey["reference"].lower() == reference.lower():
             result = dict(survey)
             result["name"] = result["title"]
+            collection_instruments = [
+                {"id": "9001", "type": "online", "formTypes": ["011", "012"]},
+                {"id": "9002", "type": "offline", "formTypes": ["021", "022"]},
+                {"id": "9003", "type": "paper", "formTypes": ["031", "032"]}
+            ]
+            result["collection_instruments"] = collection_instruments
             return jsonify(result)
 
     # not found:
