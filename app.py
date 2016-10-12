@@ -18,10 +18,9 @@ def info():
     for survey in get_registry():
         link = "/" + survey["reference"]
         result.append({
-            "name": survey["title"],
             "title": survey["title"],
             "reference": survey["reference"],
-            "urn": survey["urn"],
+            # "urn": survey["urn"],
             "link": link,
             "frequency": survey["frequency"]
         })
