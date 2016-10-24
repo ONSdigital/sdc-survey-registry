@@ -11,19 +11,18 @@ app = Flask(__name__)
 # Enable cross-origin requests
 CORS(app)
 
-registry = []
+registry = {}
 
 
 @app.route('/', methods=['GET'])
 def info():
     result = []
-    for survey in get_registry():
-        link = "/" + survey["reference"]
+    for ref, survey in registry.items():
         result.append({
-            "title": survey["title"],
+            "name": survey["name"],
             "reference": survey["reference"],
             # "urn": survey["urn"],
-            "link": link,
+            "link": "/" + survey["reference"],
             "frequency": survey["frequency"]
         })
     return jsonify(result)
@@ -31,11 +30,11 @@ def info():
 
 @app.route('/<reference>', methods=['GET'])
 def login(reference):
-    for survey in get_registry():
-        if survey["reference"].lower() == reference.lower():
-            result = dict(survey)
-            result["name"] = result["title"]
-            return jsonify(result)
+    surveys = get_registry()
+    ref = reference.lower()
+    if ref in surveys:
+        result = dict(surveys[ref])
+        return jsonify(result)
 
     # not found:
     resp = jsonify("Survey not found for: " + reference)
@@ -111,11 +110,13 @@ class DownloadWorker(Thread):
 
 id_ = 1
 form_type = 1
+survey_id = 1
 
 
 def download_survey(name, url):
     global id_
     global form_type
+    global survey_id
 
     print("Downloading " + name + " from " + url)
 
@@ -125,13 +126,16 @@ def download_survey(name, url):
     # Create an acronym reference for this survey
 
     item = data["description"]
-    title = item["title"]
-    acronym = abbreviate(item["title"])
+    name = item["title"]
+    del item["title"]
+    acronym = abbreviate(name)
+    item["name"] = name
     item["markdown"] = data["markdown"]
     item["links"] = data["links"]
+    item["survey_id"] = "0" + str(survey_id)
     item["reference"] = acronym
     item["urn"] = "urn:uk.gov.ons.surveys:id:survey:" + acronym
-    item["frequency"] = frequency(title)
+    item["frequency"] = frequency(name)
     for link in item["links"]:
         link["uri"] = "https://www.ons.gov.uk" + link["uri"]
 
@@ -143,9 +147,12 @@ def download_survey(name, url):
     ]
     id_ += 3
     form_type += 6
+    survey_id += 1
     item["collection_instruments"] = collection_instruments
 
-    registry.append(item)
+    if acronym in registry:
+        print("Replacing duplicate: " + name + " ["+acronym+"]")
+    registry[acronym] = item
     print("\tDownloaded " + name + ": " + repr(item))
 
 
