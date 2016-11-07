@@ -13,17 +13,29 @@ CORS(app)
 
 registry = {}
 
+# 'UK Innovation Survey' and 'Low Carbon and Renewable Energy Economy Survey' are in response JSON
+# and are the only ones with 'source': 'manual file upload'. Others have 'ons business register'.
+EXTERNAL_SURVEYS = [
+    'Low Carbon and Renewable Energy Economy Survey', 'Quarterly Fuels Inquiry',
+    'Sand and gravel (Land won)', 'Roofing tiles', 'Slate', 'Concrete building blocks', 'Bricks',
+    'Sand and Gravel (Marine Dredged)', 'Electricity Generated', 'UK Innovation Survey',
+    'Railways Investment Inquiry', 'Welsh Business Survey (a.k.a. Welsh Index)',
+]
+
 
 @app.route('/', methods=['GET'])
 def info():
     result = []
     for ref, survey in registry.items():
+        name = survey.get('name')
+        source = 'manual file upload' if name in EXTERNAL_SURVEYS else 'ons business register'
         result.append({
-            "name": survey["name"],
-            "reference": survey["reference"],
-            # "urn": survey["urn"],
-            "link": "/" + survey["reference"],
-            "frequency": survey["frequency"]
+            'name': name,
+            'reference': survey.get('reference'),
+            # 'urn': survey.get('urn'),
+            'link': '/' + survey.get('reference'),
+            'frequency': survey.get('frequency'),
+            'source': source,
         })
     return jsonify(result)
 
