@@ -11,7 +11,7 @@ There are two endpoints on this service as follows:
 
 Send a *get* to the default route to retrieve a summary list of all surveys.
 
-## /<reference>
+## /[reference]
 
 Send a *get* to any 'link' URI provided by the '/' endpoint to retrieve full detail about a specific survey.
 
