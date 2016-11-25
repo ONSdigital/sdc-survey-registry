@@ -13,6 +13,8 @@ CORS(app)
 
 registry = {}
 
+PORT = int(os.environ.get('PORT', 5004))
+
 # 'UK Innovation Survey' and 'Low Carbon and Renewable Energy Economy Survey' are in response JSON
 # and are the only ones with 'source': 'manual file upload'. Others have 'ons business register'.
 EXTERNAL_SURVEYS = [
@@ -174,5 +176,4 @@ if __name__ == '__main__':
     get_registry()
 
     # Start server
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(debug=True, host='0.0.0.0', port=PORT)
