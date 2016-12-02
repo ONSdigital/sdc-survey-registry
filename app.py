@@ -56,15 +56,11 @@ def login(reference):
     return resp
 
 
-def abbreviate(name):
-    acronym = ""
-    stop_words = name
-    for stop in ("and", "of", "in", "the", "by"):
-        stop_words = stop_words.replace(" " + stop + " ", " ")
-    for e in re.split("\W+", stop_words):
-        if len(e) > 0:
-            acronym += e[0]
-    return acronym.lower()
+def abbreviate(text):
+    blacklist = ['and', 'of', 'in', 'the', 'by', 'for']
+    words = re.findall('\w+', text)
+    first_letters = [word[0] for word in words if word not in blacklist]
+    return ''.join(first_letters).upper()
 
 
 def frequency(name):
